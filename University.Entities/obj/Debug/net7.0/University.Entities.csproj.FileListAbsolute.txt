@@ -1,0 +1,12 @@
+D:\NaslGhalam\University\University.Entities\bin\Debug\net7.0\University.Entities.deps.json
+D:\NaslGhalam\University\University.Entities\bin\Debug\net7.0\University.Entities.dll
+D:\NaslGhalam\University\University.Entities\bin\Debug\net7.0\University.Entities.pdb
+D:\NaslGhalam\University\University.Entities\obj\Debug\net7.0\University.Entities.csproj.AssemblyReference.cache
+D:\NaslGhalam\University\University.Entities\obj\Debug\net7.0\University.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\NaslGhalam\University\University.Entities\obj\Debug\net7.0\University.Entities.AssemblyInfoInputs.cache
+D:\NaslGhalam\University\University.Entities\obj\Debug\net7.0\University.Entities.AssemblyInfo.cs
+D:\NaslGhalam\University\University.Entities\obj\Debug\net7.0\University.Entities.csproj.CoreCompileInputs.cache
+D:\NaslGhalam\University\University.Entities\obj\Debug\net7.0\University.Entities.dll
+D:\NaslGhalam\University\University.Entities\obj\Debug\net7.0\refint\University.Entities.dll
+D:\NaslGhalam\University\University.Entities\obj\Debug\net7.0\University.Entities.pdb
+D:\NaslGhalam\University\University.Entities\obj\Debug\net7.0\ref\University.Entities.dll

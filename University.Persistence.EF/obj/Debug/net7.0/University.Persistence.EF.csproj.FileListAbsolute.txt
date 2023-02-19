@@ -1,0 +1,17 @@
+D:\NaslGhalam\University\University.Persistence.EF\bin\Debug\net7.0\University.Persistence.EF.deps.json
+D:\NaslGhalam\University\University.Persistence.EF\bin\Debug\net7.0\University.Persistence.EF.dll
+D:\NaslGhalam\University\University.Persistence.EF\bin\Debug\net7.0\University.Persistence.EF.pdb
+D:\NaslGhalam\University\University.Persistence.EF\bin\Debug\net7.0\University.Entities.dll
+D:\NaslGhalam\University\University.Persistence.EF\bin\Debug\net7.0\University.Services.dll
+D:\NaslGhalam\University\University.Persistence.EF\bin\Debug\net7.0\University.Services.pdb
+D:\NaslGhalam\University\University.Persistence.EF\bin\Debug\net7.0\University.Entities.pdb
+D:\NaslGhalam\University\University.Persistence.EF\obj\Debug\net7.0\University.Persistence.EF.csproj.AssemblyReference.cache
+D:\NaslGhalam\University\University.Persistence.EF\obj\Debug\net7.0\University.Persistence.EF.GeneratedMSBuildEditorConfig.editorconfig
+D:\NaslGhalam\University\University.Persistence.EF\obj\Debug\net7.0\University.Persistence.EF.AssemblyInfoInputs.cache
+D:\NaslGhalam\University\University.Persistence.EF\obj\Debug\net7.0\University.Persistence.EF.AssemblyInfo.cs
+D:\NaslGhalam\University\University.Persistence.EF\obj\Debug\net7.0\University.Persistence.EF.csproj.CoreCompileInputs.cache
+D:\NaslGhalam\University\University.Persistence.EF\obj\Debug\net7.0\University.Persistence.EF.csproj.CopyComplete
+D:\NaslGhalam\University\University.Persistence.EF\obj\Debug\net7.0\University.Persistence.EF.dll
+D:\NaslGhalam\University\University.Persistence.EF\obj\Debug\net7.0\refint\University.Persistence.EF.dll
+D:\NaslGhalam\University\University.Persistence.EF\obj\Debug\net7.0\University.Persistence.EF.pdb
+D:\NaslGhalam\University\University.Persistence.EF\obj\Debug\net7.0\ref\University.Persistence.EF.dll

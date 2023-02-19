@@ -1,0 +1,14 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=417cd75e_002D785c_002D4dc5_002Dbd1b_002D2436d84887a0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Add_add_classroom_properly" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::FCE02FB6-7E78-4AAE-8AC1-917902101EFA::net7.0::University.Tests.Unit.Classrooms.ClassroomServiceTest.Add_add_classroom_properly&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b6a8a1de_002D2fbc_002D43cb_002D8f69_002D73b7cf2925c5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ClassroomServiceTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::FCE02FB6-7E78-4AAE-8AC1-917902101EFA::net7.0::University.Tests.Unit.Classrooms.ClassroomServiceTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

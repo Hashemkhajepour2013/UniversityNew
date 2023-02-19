@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>University.Test.Spec</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Lessons" />
+      <Folder Include="Professors" />
+      <Folder Include="StudentClassrooms" />
+      <Folder Include="Terms" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentAssertions" Version="6.10.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.3" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="7.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="7.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.1" />
+      <PackageReference Include="xunit" Version="2.4.2" />
+      <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\University.Persistence.EF\University.Persistence.EF.csproj" />
+      <ProjectReference Include="..\University.TestTools\University.TestTools.csproj" />
+    </ItemGroup>
+
+</Project>

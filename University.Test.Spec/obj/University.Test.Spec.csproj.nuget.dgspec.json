@@ -1,0 +1,351 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\NaslGhalam\\Git\\UniversityNew\\University.Test.Spec\\University.Test.Spec.csproj": {}
+  },
+  "projects": {
+    "D:\\NaslGhalam\\Git\\UniversityNew\\University.Entities\\University.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NaslGhalam\\Git\\UniversityNew\\University.Entities\\University.Entities.csproj",
+        "projectName": "University.Entities",
+        "projectPath": "D:\\NaslGhalam\\Git\\UniversityNew\\University.Entities\\University.Entities.csproj",
+        "packagesPath": "C:\\Users\\hashem\\.nuget\\packages\\",
+        "outputPath": "D:\\NaslGhalam\\Git\\UniversityNew\\University.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hashem\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\hashem\\.dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NaslGhalam\\Git\\UniversityNew\\University.Persistence.EF\\University.Persistence.EF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NaslGhalam\\Git\\UniversityNew\\University.Persistence.EF\\University.Persistence.EF.csproj",
+        "projectName": "University.Persistence.EF",
+        "projectPath": "D:\\NaslGhalam\\Git\\UniversityNew\\University.Persistence.EF\\University.Persistence.EF.csproj",
+        "packagesPath": "C:\\Users\\hashem\\.nuget\\packages\\",
+        "outputPath": "D:\\NaslGhalam\\Git\\UniversityNew\\University.Persistence.EF\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hashem\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\NaslGhalam\\Git\\UniversityNew\\University.Services\\University.Services.csproj": {
+                "projectPath": "D:\\NaslGhalam\\Git\\UniversityNew\\University.Services\\University.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\hashem\\.dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NaslGhalam\\Git\\UniversityNew\\University.Services\\University.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NaslGhalam\\Git\\UniversityNew\\University.Services\\University.Services.csproj",
+        "projectName": "University.Services",
+        "projectPath": "D:\\NaslGhalam\\Git\\UniversityNew\\University.Services\\University.Services.csproj",
+        "packagesPath": "C:\\Users\\hashem\\.nuget\\packages\\",
+        "outputPath": "D:\\NaslGhalam\\Git\\UniversityNew\\University.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hashem\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\NaslGhalam\\Git\\UniversityNew\\University.Entities\\University.Entities.csproj": {
+                "projectPath": "D:\\NaslGhalam\\Git\\UniversityNew\\University.Entities\\University.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\hashem\\.dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NaslGhalam\\Git\\UniversityNew\\University.Test.Spec\\University.Test.Spec.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NaslGhalam\\Git\\UniversityNew\\University.Test.Spec\\University.Test.Spec.csproj",
+        "projectName": "University.Test.Spec",
+        "projectPath": "D:\\NaslGhalam\\Git\\UniversityNew\\University.Test.Spec\\University.Test.Spec.csproj",
+        "packagesPath": "C:\\Users\\hashem\\.nuget\\packages\\",
+        "outputPath": "D:\\NaslGhalam\\Git\\UniversityNew\\University.Test.Spec\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hashem\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\NaslGhalam\\Git\\UniversityNew\\University.Persistence.EF\\University.Persistence.EF.csproj": {
+                "projectPath": "D:\\NaslGhalam\\Git\\UniversityNew\\University.Persistence.EF\\University.Persistence.EF.csproj"
+              },
+              "D:\\NaslGhalam\\Git\\UniversityNew\\University.TestTools\\University.TestTools.csproj": {
+                "projectPath": "D:\\NaslGhalam\\Git\\UniversityNew\\University.TestTools\\University.TestTools.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.10.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.Extensions.Configuration.CommandLine": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.4.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\hashem\\.dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NaslGhalam\\Git\\UniversityNew\\University.TestTools\\University.TestTools.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NaslGhalam\\Git\\UniversityNew\\University.TestTools\\University.TestTools.csproj",
+        "projectName": "University.TestTools",
+        "projectPath": "D:\\NaslGhalam\\Git\\UniversityNew\\University.TestTools\\University.TestTools.csproj",
+        "packagesPath": "C:\\Users\\hashem\\.nuget\\packages\\",
+        "outputPath": "D:\\NaslGhalam\\Git\\UniversityNew\\University.TestTools\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hashem\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\NaslGhalam\\Git\\UniversityNew\\University.Persistence.EF\\University.Persistence.EF.csproj": {
+                "projectPath": "D:\\NaslGhalam\\Git\\UniversityNew\\University.Persistence.EF\\University.Persistence.EF.csproj"
+              },
+              "D:\\NaslGhalam\\Git\\UniversityNew\\University.Services\\University.Services.csproj": {
+                "projectPath": "D:\\NaslGhalam\\Git\\UniversityNew\\University.Services\\University.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\hashem\\.dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

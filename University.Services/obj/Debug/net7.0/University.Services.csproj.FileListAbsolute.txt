@@ -1,0 +1,15 @@
+D:\NaslGhalam\University\University.Services\bin\Debug\net7.0\University.Services.deps.json
+D:\NaslGhalam\University\University.Services\bin\Debug\net7.0\University.Services.dll
+D:\NaslGhalam\University\University.Services\bin\Debug\net7.0\University.Services.pdb
+D:\NaslGhalam\University\University.Services\bin\Debug\net7.0\University.Entities.dll
+D:\NaslGhalam\University\University.Services\bin\Debug\net7.0\University.Entities.pdb
+D:\NaslGhalam\University\University.Services\obj\Debug\net7.0\University.Services.csproj.AssemblyReference.cache
+D:\NaslGhalam\University\University.Services\obj\Debug\net7.0\University.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\NaslGhalam\University\University.Services\obj\Debug\net7.0\University.Services.AssemblyInfoInputs.cache
+D:\NaslGhalam\University\University.Services\obj\Debug\net7.0\University.Services.AssemblyInfo.cs
+D:\NaslGhalam\University\University.Services\obj\Debug\net7.0\University.Services.csproj.CoreCompileInputs.cache
+D:\NaslGhalam\University\University.Services\obj\Debug\net7.0\University.Services.csproj.CopyComplete
+D:\NaslGhalam\University\University.Services\obj\Debug\net7.0\University.Services.dll
+D:\NaslGhalam\University\University.Services\obj\Debug\net7.0\refint\University.Services.dll
+D:\NaslGhalam\University\University.Services\obj\Debug\net7.0\University.Services.pdb
+D:\NaslGhalam\University\University.Services\obj\Debug\net7.0\ref\University.Services.dll
