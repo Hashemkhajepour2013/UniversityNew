@@ -2,6 +2,7 @@ using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
 using University.Entities;
 using University.Persistence.EF;
+using University.Services.Infrastructure;
 using University.Services.Lessons.Contracts;
 using University.Test.Spec.Infrastructure;
 using University.TestTools;

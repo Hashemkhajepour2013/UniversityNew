@@ -71,6 +71,7 @@ public sealed class LessonServiceTests : BusinessUnitTest
             .WithTitle("lesson-T")
             .WithCoefficient(2)
             .Build();
+        Save(lesson);
 
         await _sut.Delete(lesson.Id);
 

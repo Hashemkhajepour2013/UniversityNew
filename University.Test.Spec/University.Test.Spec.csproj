@@ -35,4 +35,11 @@
       <ProjectReference Include="..\University.TestTools\University.TestTools.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <EmbeddedResource Include="appsettings.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      </EmbeddedResource>
+    </ItemGroup>
+
 </Project>

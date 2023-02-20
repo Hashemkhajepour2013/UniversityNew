@@ -6,7 +6,13 @@ public sealed class ProfessorBuilder
     private readonly Professor _professor;
     public ProfessorBuilder()
     {
-        _professor = new Professor();
+        _professor = new Professor
+        {
+            FirstName = "dummy-F",
+            LastName = "dummy-L",
+            PersonnelId = "123",
+            Mobile = "dummy-M"
+        };
     }
 
     public ProfessorBuilder WithFirstName(string firstName)

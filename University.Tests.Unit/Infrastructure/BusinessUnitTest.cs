@@ -1,4 +1,5 @@
 using University.Persistence.EF;
+using University.Services.Infrastructure;
 using University.TestTools;
 
 namespace University.Tests.Unit.Infrastructure;
@@ -18,9 +19,19 @@ public abstract class BusinessUnitTest
         return _context;
     }
     
-    public void Save<T>(T entity)
+    protected void Save<T>(T entity) where T : class, new()
     {
-        if (entity != null)
-            _context.Manipulate(_ => _.Add(entity));
+        _context.Save(entity);
+    }
+
+    protected void Save<T>(params T[] entities) where T : class, new()
+    {
+        foreach (var entity in entities)
+            _context.SaveRange(entity);
+    }
+
+    public void Save()
+    {
+        _context.SaveChanges();
     }
 }

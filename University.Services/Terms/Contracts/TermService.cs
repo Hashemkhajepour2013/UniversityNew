@@ -1,8 +1,9 @@
-﻿using University.Services.Terms.Contracts.Dtos;
+﻿using University.Services.Infrastructure;
+using University.Services.Terms.Contracts.Dtos;
 
 namespace University.Services.Terms.Contracts;
 
-public interface TermService
+public interface TermService : Service
 {
     Task<int> Add(AddTermDto dto);
 

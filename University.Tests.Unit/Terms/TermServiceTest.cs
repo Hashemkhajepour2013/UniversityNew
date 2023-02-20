@@ -12,7 +12,7 @@ public sealed class TermServiceTest : BusinessUnitTest
 {
     private readonly TermService _sut;
 
-    public TermServiceTest(TermService sut)
+    public TermServiceTest()
     {
         var efDataContext = DbContext();
         _sut = TermServiceFactory.CreateService(ref efDataContext);
@@ -70,7 +70,8 @@ public sealed class TermServiceTest : BusinessUnitTest
     private async Task Delete_delete_term_properly()
     {
         var term = new TermBuilder().Build();
-
+        Save(term);
+        
         await _sut.Delete(term.Id);
 
         DbContext().Terms.Should().BeNullOrEmpty();

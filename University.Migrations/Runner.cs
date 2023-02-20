@@ -7,14 +7,14 @@ namespace University.Migrations;
 
 static class Runner
 {
-    private const string PersistenceConfigKey = "ConnectionStrings";
+    private const string PersistenceConfigKey = "PersistenceConfig";
     private const string AppSettingPath = "appsettings.json";
     static void Main(string[] args) 
     {
         var options =
             GetSettings(args, Directory.GetCurrentDirectory());
 
-        var connectionString = options.DefaultConnection;
+        var connectionString = options.ConnectionString;
 
         CreateDatabase(connectionString);
 
@@ -27,7 +27,7 @@ static class Runner
     {
         var databaseName = GetDatabaseName(connectionString);
         string masterConnectionString = ChangeDatabaseName(
-            connectionString, databaseName);
+            connectionString, "master");
         var commandScript =
             $"if db_id(N'{databaseName}') is null create " +
             $"database [{databaseName}]";
@@ -90,5 +90,5 @@ static class Runner
 
 public class PersistenceConfig
 {
-    public string DefaultConnection { get; set; }
+    public string ConnectionString { get; set; }
 }

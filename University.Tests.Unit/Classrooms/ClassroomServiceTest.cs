@@ -35,8 +35,8 @@ public sealed class ClassroomServiceTest : BusinessUnitTest
         var professor = new ProfessorBuilder().Build();
         Save(professor);
         var dto = new CreateClassroomDtoBuilder()
-            .WithStartDate(DateTime.Now)
-            .WithEndDate(DateTime.Now)
+            .WithStartDate(DateTime.Now.AddHours(1))
+            .WithEndDate(DateTime.Now.AddHours(2))
             .WithCapacity(20)
             .WithLesson(lesson.Id)
             .WithProfessor(professor.Id)
@@ -63,8 +63,8 @@ public sealed class ClassroomServiceTest : BusinessUnitTest
         var professor = new ProfessorBuilder().Build();
         Save(professor);
         var dto = new CreateClassroomDtoBuilder()
-            .WithStartDate(DateTime.Now)
-            .WithEndDate(DateTime.Now)
+            .WithStartDate(DateTime.Now.AddHours(1))
+            .WithEndDate(DateTime.Now.AddHours(2))
             .WithCapacity(20)
             .WithLesson(lesson.Id)
             .WithProfessor(professor.Id)
@@ -85,10 +85,9 @@ public sealed class ClassroomServiceTest : BusinessUnitTest
         Save(term);
         var professor = new ProfessorBuilder().Build();
         Save(professor);
-        Save(term);
         var dto = new CreateClassroomDtoBuilder()
-            .WithStartDate(DateTime.Now)
-            .WithEndDate(DateTime.Now)
+            .WithStartDate(DateTime.Now.AddHours(1))
+            .WithEndDate(DateTime.Now.AddHours(2))
             .WithCapacity(20)
             .WithLesson(lessonId)
             .WithProfessor(professor.Id)
@@ -109,10 +108,9 @@ public sealed class ClassroomServiceTest : BusinessUnitTest
         Save(term);
         var lesson = new LessonBuilder().Build();
         Save(lesson);
-        Save(term);
         var dto = new CreateClassroomDtoBuilder()
-            .WithStartDate(DateTime.Now)
-            .WithEndDate(DateTime.Now)
+            .WithStartDate(DateTime.Now.AddHours(1))
+            .WithEndDate(DateTime.Now.AddHours(2))
             .WithCapacity(20)
             .WithLesson(lesson.Id)
             .WithProfessor(professorId)
@@ -122,7 +120,7 @@ public sealed class ClassroomServiceTest : BusinessUnitTest
         var expected = async () => await _sut.Add(dto);
 
         await expected.Should()
-            .ThrowExactlyAsync<LessonNotFoundException>();
+            .ThrowExactlyAsync<ProfessorNotFoundException>();
     }
 
 
@@ -187,8 +185,8 @@ public sealed class ClassroomServiceTest : BusinessUnitTest
             .WithTerm(term2.Id)
             .WithLesson(lesson2.Id)
             .WithProfessor(professor2.Id)
-            .WithStartDate(DateTime.Now)
-            .WithEndDate(DateTime.Now)
+            .WithStartDate(DateTime.Now.AddHours(1))
+            .WithEndDate(DateTime.Now.AddHours(2))
             .WithCapacity(50)
             .Build();
 
@@ -214,8 +212,8 @@ public sealed class ClassroomServiceTest : BusinessUnitTest
             .WithTerm(term.Id)
             .WithLesson(lesson.Id)
             .WithProfessor(professor.Id)
-            .WithStartDate(DateTime.Now)
-            .WithEndDate(DateTime.Now)
+            .WithStartDate(DateTime.Now.AddHours(1))
+            .WithEndDate(DateTime.Now.AddHours(2))
             .WithCapacity(50)
             .Build();
 
@@ -247,8 +245,8 @@ public sealed class ClassroomServiceTest : BusinessUnitTest
             .WithTerm(term2.Id)
             .WithLesson(lessonId)
             .WithProfessor(professor2.Id)
-            .WithStartDate(DateTime.Now)
-            .WithEndDate(DateTime.Now)
+            .WithStartDate(DateTime.Now.AddHours(1))
+            .WithEndDate(DateTime.Now.AddHours(2))
             .WithCapacity(50)
             .Build();
 
@@ -280,8 +278,8 @@ public sealed class ClassroomServiceTest : BusinessUnitTest
             .WithTerm(termId)
             .WithProfessor(professor2.Id)
             .WithLesson(lesson2.Id)
-            .WithStartDate(DateTime.Now)
-            .WithEndDate(DateTime.Now)
+            .WithStartDate(DateTime.Now.AddHours(1))
+            .WithEndDate(DateTime.Now.AddHours(2))
             .WithCapacity(50)
             .Build();
 
@@ -313,8 +311,8 @@ public sealed class ClassroomServiceTest : BusinessUnitTest
             .WithTerm(term2.Id)
             .WithProfessor(professorId)
             .WithLesson(lesson2.Id)
-            .WithStartDate(DateTime.Now)
-            .WithEndDate(DateTime.Now)
+            .WithStartDate(DateTime.Now.AddHours(1))
+            .WithEndDate(DateTime.Now.AddHours(2))
             .WithCapacity(50)
             .Build();
 

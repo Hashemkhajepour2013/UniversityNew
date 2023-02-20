@@ -51,9 +51,19 @@ public sealed class StudentClassroomServiceTest : BusinessUnitTest
     {
         var term = CreateTerm();
         var lesson = CreateLesson();
-        var student = CreateStudent();
-        var classroom = CreateClassroom(term, lesson); 
-        CreateClassroom(term, lesson);
+        var student = CreateStudent(); 
+        var classroom1 = CreateClassroom(term, lesson);
+        var studentClassroom = new StudentClassroomBuilder()
+            .WithClassroom(classroom1.Id)
+            .WithStudent(student.Id).Build();
+        Save(studentClassroom);
+        var classroom = new ClassroomBuilder()
+            .WithTerm(term.Id)
+            .WithLesson(lesson.Id)
+            .WithCapacity(2)
+            .WithStartDate(DateTime.Now.AddMinutes(1))
+            .WithEndDate(DateTime.Now.AddHours(3)).Build();
+        Save(classroom);
         var dto = new AddStudentClassroomDtoBuilder()
             .WithClassroom(classroom.Id)
             .WithStudent(student.Id).Build();
@@ -159,8 +169,8 @@ public sealed class StudentClassroomServiceTest : BusinessUnitTest
             .WithTerm(term.Id)
             .WithLesson(lesson.Id)
             .WithCapacity(2)
-            .WithStartDate(DateTime.Now)
-            .WithEndDate(DateTime.Now).Build();
+            .WithStartDate(DateTime.Now.AddHours(2))
+            .WithEndDate(DateTime.Now.AddHours(4)).Build();
         Save(classroom);
         return classroom;
     }

@@ -12,7 +12,7 @@ public sealed class _202302182048_initialProfessorTable : Migration
             .WithColumn("FirstName").AsString(100).NotNullable()
             .WithColumn("LastName").AsString(100).NotNullable()
             .WithColumn("Mobile").AsString(11).NotNullable()
-            .WithColumn("PersonnelId").AsByte().NotNullable();
+            .WithColumn("PersonnelId").AsString(10).NotNullable();
     }
 
     public override void Down()

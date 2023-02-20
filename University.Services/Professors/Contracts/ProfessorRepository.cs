@@ -1,8 +1,9 @@
 ﻿using University.Entities;
+using University.Services.Infrastructure;
 
 namespace University.Services.Professors.Contracts;
 
-public interface ProfessorRepository
+public interface ProfessorRepository : Service
 {
     Task Add(Professor professor);
     

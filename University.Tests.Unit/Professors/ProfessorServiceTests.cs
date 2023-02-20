@@ -100,7 +100,8 @@ public sealed class ProfessorServiceTests : BusinessUnitTest
     private async Task Delete_delete_professor_properly()
     {
         var professor = new ProfessorBuilder().Build();
-
+        Save(professor);
+        
         await _sut.Delete(professor.Id);
 
         DbContext().Professors.Should().HaveCount(0);

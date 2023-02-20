@@ -21,6 +21,12 @@ public sealed class EFDataContext : DbContext
     {
     }
     
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+        modelBuilder.ApplyConfigurationsFromAssembly(
+            typeof(EFDataContext).Assembly);
+    }
     
     public DbSet<Professor> Professors { get; set; }
     public DbSet<Student> Students { get; set; }

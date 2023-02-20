@@ -2,6 +2,7 @@ using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
 using University.Entities;
 using University.Persistence.EF;
+using University.Services.Infrastructure;
 using University.Services.Professors.Contracts;
 using University.Services.Professors.Contracts.Dtos;
 using University.Test.Spec.Infrastructure;
@@ -58,7 +59,7 @@ public sealed class Update : EFDataContextDatabaseFixture
         expected.FirstName.Should().Be("محمد");
         expected.LastName.Should().Be("ژیان پور");
         expected.Mobile.Should().Be("09164932539");
-        expected.Mobile.Should().Be("456");
+        expected.PersonnelId.Should().Be("456");
     }
     
     [Fact]

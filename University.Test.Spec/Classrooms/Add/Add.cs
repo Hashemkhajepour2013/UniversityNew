@@ -4,6 +4,7 @@ using University.Entities;
 using University.Persistence.EF;
 using University.Services.Classrooms.Contracts;
 using University.Services.Classrooms.Contracts.Dtos;
+using University.Services.Infrastructure;
 using University.Test.Spec.Infrastructure;
 using University.TestTools;
 using University.TestTools.Classrooms;

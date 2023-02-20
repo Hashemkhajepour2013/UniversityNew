@@ -4,6 +4,7 @@ using University.Entities;
 using University.Persistence.EF;
 using University.Services.Classrooms.Contracts;
 using University.Services.Classrooms.Contracts.Dtos;
+using University.Services.Infrastructure;
 using University.Test.Spec.Infrastructure;
 using University.TestTools;
 using University.TestTools.Classrooms;
@@ -109,7 +110,7 @@ public sealed class Update : EFDataContextDatabaseFixture
         var expected = await _context.Classrooms.SingleAsync();
         expected.StartDate.Should().Be(_dto.StartDate);
         expected.EndDate.Should().Be(_dto.EndDate);
-        expected.Capacity.Should().Be(10);
+        expected.Capacity.Should().Be(20);
         expected.TermId.Should().Be(_term.Id);
         expected.LessonId.Should().Be(_lesson.Id);
         expected.ProfessorId.Should().Be(_professor.Id);

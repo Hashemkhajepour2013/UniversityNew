@@ -1,6 +1,7 @@
 using FluentAssertions;
 using University.Persistence.EF;
 using University.Services.Documents.Exceptions;
+using University.Services.Infrastructure;
 using University.Services.Students.Contracts;
 using University.Test.Spec.Infrastructure;
 using University.TestTools;

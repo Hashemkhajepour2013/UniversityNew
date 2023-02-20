@@ -107,6 +107,7 @@ public sealed class StudentServiceTests : BusinessUnitTest
             .WithMobile("dummy-M")
             .WithStudentNumber("123")
             .Build();
+        Save(student);
 
         await _sut.Delete(student.Id);
 

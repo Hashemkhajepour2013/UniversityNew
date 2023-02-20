@@ -1,7 +1,26 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace University.Services.Infrastructure;
 
 public static class EnumerableHelper
 {
+    public static void Save<TDbContext, TEntity>
+        (this TDbContext dbContext, TEntity entity)
+        where TDbContext : DbContext
+        where TEntity : class, new()
+    {
+        dbContext.Add(entity);
+        dbContext.SaveChanges();
+    }
+
+    public static void SaveRange<TDbContext, TEntity>
+        (this TDbContext dbContext, params TEntity[] entities)
+        where TDbContext : DbContext
+        where TEntity : class, new()
+    {
+        entities.ForEach(entity => dbContext.Add(entity));
+        dbContext.SaveChanges();
+    }
     public static void ForEach<T>(
         this IEnumerable<T> source, Action<T> action)
     {

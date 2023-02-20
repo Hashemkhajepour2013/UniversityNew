@@ -1,8 +1,9 @@
 ﻿using University.Entities;
+using University.Services.Infrastructure;
 
 namespace University.Services.StudentClassrooms.Contracts;
 
-public interface StudentClassroomRepository
+public interface StudentClassroomRepository : Service
 {
     Task Add(StudentClassroom studentClassroom);
 
